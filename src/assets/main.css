@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Montserrat:wght@300;400;700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -12,6 +14,7 @@
 
 body {
   background-color: #eee;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
@@ -19,4 +22,9 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+bdi {
+  font-family: "Almarai", sans-serif;
 }
