@@ -42,8 +42,6 @@ img {
 h3 {
   text-align: center;
   padding: 5px 0;
-  background-color: #999;
-  color: white;
 }
 img {
   width: 100%;
