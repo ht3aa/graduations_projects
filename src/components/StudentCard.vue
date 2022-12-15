@@ -11,21 +11,25 @@ defineProps({
 
 <template>
   <div class="card_container">
-    <h3
-      :style="{ 'background-color': order_bg_color, color: order_text_color }"
-    >
-      {{ order }}
-    </h3>
-    <img src="../assets/imgs/2022_2023/me2.jpg" alt="hassan img" />
-    <p>
-      Name:
-      <span
-        ><bdi>{{ name }}</bdi></span
+    <div>
+      <h3
+        :style="{ 'background-color': order_bg_color, color: order_text_color }"
       >
-    </p>
-    <p>
-      Project Name: <span>{{ project_name }}</span>
-    </p>
+        Order: {{ order }}
+      </h3>
+      <img src="../assets/imgs/2022_2023/me2.jpg" alt="hassan img" />
+    </div>
+    <div>
+      <p>
+        Name:
+        <span
+          ><bdi>{{ name }}</bdi></span
+        >
+      </p>
+      <p>
+        Project Name: <span>{{ project_name }}</span>
+      </p>
+    </div>
     <router-link :to="`/student/${id}`"><button>See More</button></router-link>
   </div>
 </template>
@@ -35,6 +39,9 @@ defineProps({
   background-color: #e5e1e1;
   width: 240px; /* when you change this you should change the column width */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 img {
   width: 60%;
@@ -57,7 +64,7 @@ span {
 
 button {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   background-color: black;
   color: white;
   padding: 10px 0;

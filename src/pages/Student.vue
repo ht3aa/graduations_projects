@@ -12,13 +12,17 @@
       </div>
     </div>
 
-    <p>
+    <p class="description_p">
       <span>Description: </span>
       here will be small description about the project.
     </p>
 
     <div class="btn_group">
-      <button class="download_btn">Download PDF</button>
+      <a
+        href="https://downloads.hindawi.com/journals/jhe/2022/9580991.pdf"
+        download
+        ><button class="download_btn">Download PDF</button></a
+      >
       <router-link to="/"
         ><button class="goBack_btn">Go back</button></router-link
       >
@@ -51,8 +55,21 @@ span {
   width: 80%;
 }
 
-p {
+.information > p {
   margin: 10px;
+}
+
+@media only screen and (max-width: 860px) {
+  .main_information img {
+    width: 40%;
+  }
+  .information > p {
+    margin: 10px 0;
+  }
+}
+
+.description_p {
+  margin: 10px 0;
 }
 
 .btn_group {
