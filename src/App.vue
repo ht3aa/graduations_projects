@@ -6,7 +6,8 @@
       <img src="./assets/logo.png" alt="bit logo" />
     </div>
     <menu>
-      <li>Years</li>
+      <li><router-link to="/uploadForm">Upload</router-link></li>
+      <li><router-link to="/">Home</router-link></li>
     </menu>
   </nav>
 
@@ -36,5 +37,25 @@ nav {
 menu {
   list-style: none;
   color: white;
+  display: flex;
+}
+menu li {
+  cursor: pointer;
+}
+menu li a:hover,
+menu li a:focus {
+  color: rgb(255, 213, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.router-link-active,
+.router-link-exact-active {
+  color: rgb(255, 213, 0);
+}
+menu li:not(:last-child) {
+  margin-right: 30px;
 }
 </style>
